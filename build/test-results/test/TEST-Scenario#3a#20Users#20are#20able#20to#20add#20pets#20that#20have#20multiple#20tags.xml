@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to add pets that have multiple tags" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:16" hostname="WKMGB2598340" time="0.424">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Users are able to add pets that have multiple tags" time="0.0"/>
+  <testcase name="Then I can add a pet that has multiple tags" classname="Scenario: Users are able to add pets that have multiple tags" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to add pets that have multiple tags" time="0.928"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to delete pets from the system                                     ?[90m# PetTests.feature:13?[0m
+    ?[32mGiven ?[0m?[32ma pet exists?[0m                                                                        ?[90m# PetEndpointStepDefinitions.a_pet_exists()?[0m
+    ?[32mWhen ?[0m?[32mI delete the pet?[0m                                                                     ?[90m# PetEndpointStepDefinitions.i_delete_the_pet()?[0m
+    ?[32mAnd ?[0m?[32mthen search for the pet by it's id?[0m                                                    ?[90m# PetEndpointStepDefinitions.then_search_for_the_pet_by_its_id()?[0m
+    ?[32mThen ?[0m?[32mthe requests response will contain the value '?[0m?[32m?[1mPet not found?[0m?[32m' for the '?[0m?[32m?[1mmessage?[0m?[32m' field?[0m ?[90m# CommonDefinitions.i_will_be_able_to_run_connected_step_definitions(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

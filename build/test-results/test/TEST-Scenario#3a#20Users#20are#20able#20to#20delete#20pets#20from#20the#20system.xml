@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to delete pets from the system" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:14" hostname="WKMGB2598340" time="0.756">
+  <properties/>
+  <testcase name="Given a pet exists" classname="Scenario: Users are able to delete pets from the system" time="0.0"/>
+  <testcase name="When I delete the pet" classname="Scenario: Users are able to delete pets from the system" time="0.0"/>
+  <testcase name="And then search for the pet by it's id" classname="Scenario: Users are able to delete pets from the system" time="0.001"/>
+  <testcase name="Then the requests response will contain the value 'Pet not found' for the 'message' field" classname="Scenario: Users are able to delete pets from the system" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to delete pets from the system" time="1.108"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to add pets to the system             ?[90m# PetTests.feature:5?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m                  ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mWhen ?[0m?[32mI add a Pet to the system?[0m                               ?[90m# PetEndpointStepDefinitions.i_add_a__pet_to_the_system()?[0m
+    ?[32mThen ?[0m?[32mthe pet request response has a '?[0m?[32m?[1m200?[0m?[32m' response code?[0m      ?[90m# PetEndpointStepDefinitions.the_pet_request_response_has_the_correct_response_code(Integer)?[0m
+    ?[32mAnd ?[0m?[32mthe pet requests response contains the correct json data?[0m ?[90m# PetEndpointStepDefinitions.the_pet_requests_response_contains_the_correct_json_data()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

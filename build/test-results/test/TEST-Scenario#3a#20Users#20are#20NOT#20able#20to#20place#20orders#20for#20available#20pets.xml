@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are NOT able to place orders for available pets" tests="3" skipped="0" failures="2" errors="0" timestamp="2019-11-29T16:17:13" hostname="WKMGB2598340" time="0.43">
+  <properties/>
+  <testcase name="Given a cat is 'unavailable'" classname="Scenario: Users are NOT able to place orders for available pets" time="0.0"/>
+  <testcase name="Then I am not able to place an order for a cat" classname="Scenario: Users are NOT able to place orders for available pets" time="0.002">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;400&gt;&#10;     but: was &lt;200&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at endpoints.BaseEndpoints.verifyResponseStatusValue(BaseEndpoints.java:46)
+	at stepdefs.OrderEndpointStepDefinitions.i_am_not_able_to_place_an_order_for_a_cat(OrderEndpointStepDefinitions.java:65)
+	at ✽.Then I am not able to place an order for a cat(OrderTests.feature:31)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: Users are NOT able to place orders for available pets" time="0.837">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;400&gt;&#10;     but: was &lt;200&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at endpoints.BaseEndpoints.verifyResponseStatusValue(BaseEndpoints.java:46)
+	at stepdefs.OrderEndpointStepDefinitions.i_am_not_able_to_place_an_order_for_a_cat(OrderEndpointStepDefinitions.java:65)
+	at ✽.Then I am not able to place an order for a cat(OrderTests.feature:31)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to place orders for available pets ?[90m# OrderTests.feature:24?[0m
+    ?[32mGiven ?[0m?[32ma cat is '?[0m?[32m?[1mavailable?[0m?[32m'?[0m                                ?[90m# PetEndpointStepDefinitions.a_cat_is_availablilability(String)?[0m
+    ?[32mThen ?[0m?[32mI am able to place an order for a cat?[0m                ?[90m# OrderEndpointStepDefinitions.i_am_able_to_place_an_order_for_a_cat()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

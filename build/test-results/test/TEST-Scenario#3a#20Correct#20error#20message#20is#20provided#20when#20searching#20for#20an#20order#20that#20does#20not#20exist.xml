@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Correct error message is provided when searching for an order that does not exist" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:09" hostname="WKMGB2598340" time="0.72">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Correct error message is provided when searching for an order that does not exist" time="0.0"/>
+  <testcase name="When I search for an order with an id value of '15787678'" classname="Scenario: Correct error message is provided when searching for an order that does not exist" time="0.0"/>
+  <testcase name="Then the requests response will contain the value 'Order not found' for the 'message' field" classname="Scenario: Correct error message is provided when searching for an order that does not exist" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: Correct error message is provided when searching for an order that does not exist" time="2.822"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

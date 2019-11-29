@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class RunCukesTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class RunCukesTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; RunCukesTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Feature: Order Tests
+  This feature includes tests that test the store order RESTFul services
+
+  @smokeTest
+  Scenario: Users are NOT able to place orders for available pets ?[90m# OrderTests.feature:29?[0m
+    ?[32mGiven ?[0m?[32ma cat is '?[0m?[32m?[1munavailable?[0m?[32m'?[0m                                  ?[90m# PetEndpointStepDefinitions.a_cat_is_availablilability(String)?[0m
+    ?[31mThen ?[0m?[31mI am not able to place an order for a cat?[0m                ?[90m# OrderEndpointStepDefinitions.i_am_not_able_to_place_an_order_for_a_cat()?[0m
+      ?[31mjava.lang.AssertionError: 
+      Expected: is &lt;400&gt;
+           but: was &lt;200&gt;
+      	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+      	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+      	at endpoints.BaseEndpoints.verifyResponseStatusValue(BaseEndpoints.java:46)
+      	at stepdefs.OrderEndpointStepDefinitions.i_am_not_able_to_place_an_order_for_a_cat(OrderEndpointStepDefinitions.java:65)
+      	at ✽.Then I am not able to place an order for a cat(OrderTests.feature:31)
+      ?[0m
+Feature: Pet Tests
+  This feature includes tests that test the pet RESTFul services
+
+  @smokeTest
+  Scenario: Adding a pet with no body for the request results in a 400 response           ?[90m# PetTests.feature:36?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m                                           ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mWhen ?[0m?[32mI add a pet and the json body is malformed and consists of only '?[0m?[32m?[1m{?[0m?[32m'?[0m              ?[90m# PetEndpointStepDefinitions.i_add_a_pet_and_the_json_body_is_malformed(String)?[0m
+    ?[32mThen ?[0m?[32mthe pet request response has a '?[0m?[32m?[1m400?[0m?[32m' response code?[0m                               ?[90m# PetEndpointStepDefinitions.the_pet_request_response_has_the_correct_response_code(Integer)?[0m
+    ?[32mThen ?[0m?[32mthe requests response will contain the value '?[0m?[32m?[1mbad input?[0m?[32m' for the '?[0m?[32m?[1mmessage?[0m?[32m' field?[0m ?[90m# CommonDefinitions.i_will_be_able_to_run_connected_step_definitions(String,String)?[0m
+Feature: User Tests
+  This feature includes tests that test the user RESTFul services
+
+  @smokeTest
+  Scenario: Users are searchable by their username ?[90m# UserTests.feature:5?[0m
+    ?[32mGiven ?[0m?[32ma valid user exists?[0m                      ?[90m# UserEndpointStepDefinitions.a_valid_user_exists()?[0m
+    ?[32mWhen ?[0m?[32mI search for the user by their username?[0m   ?[90m# UserEndpointStepDefinitions.i_search_for_the_user_by_their_username()?[0m
+    ?[32mThen ?[0m?[32mthe user is located?[0m                       ?[90m# UserEndpointStepDefinitions.the_user_is_located()?[0m
+
+?[31mFailed scenarios:?[0m
+?[31mOrderTests.feature:29 ?[0m# Scenario: Users are NOT able to place orders for available pets
+?[31mPetTests.feature:30 ?[0m# Scenario: Id's are automatically generated for pets when not supplied with the request
+
+12 Scenarios (?[31m2 failed?[0m, ?[32m10 passed?[0m)
+36 Steps (?[31m2 failed?[0m, ?[32m34 passed?[0m)
+0m12.700s
+
+java.lang.AssertionError: 
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at endpoints.BaseEndpoints.verifyResponseStatusValue(BaseEndpoints.java:46)
+	at stepdefs.OrderEndpointStepDefinitions.i_am_not_able_to_place_an_order_for_a_cat(OrderEndpointStepDefinitions.java:65)
+	at ✽.Then I am not able to place an order for a cat(OrderTests.feature:31)
+
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at endpoints.BaseEndpoints.verifyTrue(BaseEndpoints.java:37)
+	at endpoints.PetEndpoint.verifyPetHasAnId(PetEndpoint.java:103)
+	at stepdefs.PetEndpointStepDefinitions.an_id_is_automatically_generated_for_the_added_pet(PetEndpointStepDefinitions.java:75)
+	at ✽.Then an id is automatically generated for the added pet(PetTests.feature:33)
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.0.1</a> at 29 Nov 2019, 16:17:20</p>
+</div>
+</div>
+</body>
+</html>

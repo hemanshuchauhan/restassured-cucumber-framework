@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to place orders for available pets" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:12" hostname="WKMGB2598340" time="0.527">
+  <properties/>
+  <testcase name="Given a cat is 'available'" classname="Scenario: Users are able to place orders for available pets" time="0.0"/>
+  <testcase name="Then I am able to place an order for a cat" classname="Scenario: Users are able to place orders for available pets" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to place orders for available pets" time="0.994"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to search for orders by its id ?[90m# OrderTests.feature:18?[0m
+    ?[32mGiven ?[0m?[32man order exists for a pet?[0m                       ?[90m# OrderEndpointStepDefinitions.an_order_exists_for_a_pet()?[0m
+    ?[32mWhen ?[0m?[32mI search for the order by its id?[0m                 ?[90m# OrderEndpointStepDefinitions.i_search_for_the_order_by_its_id()?[0m
+    ?[32mThen ?[0m?[32mthe complete order is returned?[0m                   ?[90m# OrderEndpointStepDefinitions.the_complete_order_is_returned()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to add pets to the system" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:14" hostname="WKMGB2598340" time="0.489">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Users are able to add pets to the system" time="0.0"/>
+  <testcase name="When I add a Pet to the system" classname="Scenario: Users are able to add pets to the system" time="0.0"/>
+  <testcase name="Then the pet request response has a '200' response code" classname="Scenario: Users are able to add pets to the system" time="0.0"/>
+  <testcase name="And the pet requests response contains the correct json data" classname="Scenario: Users are able to add pets to the system" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to add pets to the system" time="0.981"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

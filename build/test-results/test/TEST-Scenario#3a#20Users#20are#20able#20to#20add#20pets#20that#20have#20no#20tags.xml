@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to add pets that have no tags" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:17" hostname="WKMGB2598340" time="0.351">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Users are able to add pets that have no tags" time="0.0"/>
+  <testcase name="Then I can add a pet that has no tags" classname="Scenario: Users are able to add pets that have no tags" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to add pets that have no tags" time="0.868"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to add pets that have multiple tags ?[90m# PetTests.feature:20?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m                ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mThen ?[0m?[32mI can add a pet that has multiple tags?[0m                ?[90m# PetEndpointStepDefinitions.i_can_add_a_pet_that_has_multiple_tags()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Id's are automatically generated for pets when not supplied with the request" tests="4" skipped="0" failures="2" errors="0" timestamp="2019-11-29T16:17:17" hostname="WKMGB2598340" time="0.346">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Id's are automatically generated for pets when not supplied with the request" time="0.0"/>
+  <testcase name="When I add a pet to the system without providing an id value" classname="Scenario: Id's are automatically generated for pets when not supplied with the request" time="0.0"/>
+  <testcase name="Then an id is automatically generated for the added pet" classname="Scenario: Id's are automatically generated for pets when not supplied with the request" time="0.0">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at endpoints.BaseEndpoints.verifyTrue(BaseEndpoints.java:37)
+	at endpoints.PetEndpoint.verifyPetHasAnId(PetEndpoint.java:103)
+	at stepdefs.PetEndpointStepDefinitions.an_id_is_automatically_generated_for_the_added_pet(PetEndpointStepDefinitions.java:75)
+	at ✽.Then an id is automatically generated for the added pet(PetTests.feature:33)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: Id's are automatically generated for pets when not supplied with the request" time="0.816">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at endpoints.BaseEndpoints.verifyTrue(BaseEndpoints.java:37)
+	at endpoints.PetEndpoint.verifyPetHasAnId(PetEndpoint.java:103)
+	at stepdefs.PetEndpointStepDefinitions.an_id_is_automatically_generated_for_the_added_pet(PetEndpointStepDefinitions.java:75)
+	at ✽.Then an id is automatically generated for the added pet(PetTests.feature:33)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to add pets that have no tags ?[90m# PetTests.feature:25?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m          ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mThen ?[0m?[32mI can add a pet that has no tags?[0m                ?[90m# PetEndpointStepDefinitions.i_can_add_a_pet_that_has_no_tags()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

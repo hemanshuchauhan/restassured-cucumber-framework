@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.asset.control</groupId>
+	<artifactId>cucumber-restassured</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>AssetControlAPITest</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>1.2.5</cucumber.version>
+		<rest-assured.version>3.3.0</rest-assured.version>
+	</properties>
+	<dependencies>
+	
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java8</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180813</version>
+		</dependency>
+	</dependencies>
+</project>

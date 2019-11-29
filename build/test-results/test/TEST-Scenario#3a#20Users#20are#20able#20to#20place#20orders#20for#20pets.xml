@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to place orders for pets" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:10" hostname="WKMGB2598340" time="0.436">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Users are able to place orders for pets" time="0.001"/>
+  <testcase name="When I place an order for a pet with an order id of '58'" classname="Scenario: Users are able to place orders for pets" time="0.0"/>
+  <testcase name="Then the order request response has a '200' response code" classname="Scenario: Users are able to place orders for pets" time="0.0"/>
+  <testcase name="And the order requests response contains the correct json data" classname="Scenario: Users are able to place orders for pets" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to place orders for pets" time="0.921"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Correct error message is provided when searching for an order that does not exist   ?[90m# OrderTests.feature:5?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m                                                 ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mWhen ?[0m?[32mI search for an order with an id value of '?[0m?[32m?[1m15787678?[0m?[32m'?[0m                                   ?[90m# OrderEndpointStepDefinitions.i_search_for_an_order_with_an_id_value_of_id(String)?[0m
+    ?[32mThen ?[0m?[32mthe requests response will contain the value '?[0m?[32m?[1mOrder not found?[0m?[32m' for the '?[0m?[32m?[1mmessage?[0m?[32m' field?[0m ?[90m# CommonDefinitions.i_will_be_able_to_run_connected_step_definitions(String,String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

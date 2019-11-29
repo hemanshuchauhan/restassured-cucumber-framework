@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are able to search for orders by its id" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:11" hostname="WKMGB2598340" time="0.456">
+  <properties/>
+  <testcase name="Given an order exists for a pet" classname="Scenario: Users are able to search for orders by its id" time="0.0"/>
+  <testcase name="When I search for the order by its id" classname="Scenario: Users are able to search for orders by its id" time="0.0"/>
+  <testcase name="Then the complete order is returned" classname="Scenario: Users are able to search for orders by its id" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are able to search for orders by its id" time="0.881"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Users are able to place orders for pets                ?[90m# OrderTests.feature:11?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m                    ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mWhen ?[0m?[32mI place an order for a pet with an order id of '?[0m?[32m?[1m58?[0m?[32m'?[0m       ?[90m# OrderEndpointStepDefinitions.i_make_a_post_request(Integer)?[0m
+    ?[32mThen ?[0m?[32mthe order request response has a '?[0m?[32m?[1m200?[0m?[32m' response code?[0m      ?[90m# OrderEndpointStepDefinitions.the_response_has_the_correct_response_code(Integer)?[0m
+    ?[32mAnd ?[0m?[32mthe order requests response contains the correct json data?[0m ?[90m# OrderEndpointStepDefinitions.the_json_response_contains_the_correct_data()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

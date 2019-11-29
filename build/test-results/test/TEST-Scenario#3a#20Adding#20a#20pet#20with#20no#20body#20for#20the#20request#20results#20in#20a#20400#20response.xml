@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Adding a pet with no body for the request results in a 400 response" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:18" hostname="WKMGB2598340" time="0.444">
+  <properties/>
+  <testcase name="Given the Swagger Petstore API is available" classname="Scenario: Adding a pet with no body for the request results in a 400 response" time="0.0"/>
+  <testcase name="When I add a pet and the json body is malformed and consists of only '{'" classname="Scenario: Adding a pet with no body for the request results in a 400 response" time="0.0"/>
+  <testcase name="Then the pet request response has a '400' response code" classname="Scenario: Adding a pet with no body for the request results in a 400 response" time="0.0"/>
+  <testcase name="Then the requests response will contain the value 'bad input' for the 'message' field" classname="Scenario: Adding a pet with no body for the request results in a 400 response" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Adding a pet with no body for the request results in a 400 response" time="0.934"/>
+  <system-out><![CDATA[
+  @smokeTest
+  Scenario: Id's are automatically generated for pets when not supplied with the request ?[90m# PetTests.feature:30?[0m
+    ?[32mGiven ?[0m?[32mthe Swagger Petstore API is available?[0m                                          ?[90m# CommonDefinitions.the_swagger_petstore_api_is_available()?[0m
+    ?[32mWhen ?[0m?[32mI add a pet to the system without providing an id value?[0m                         ?[90m# PetEndpointStepDefinitions.i_add_a_pet_to_the_system_without_providing_an_id_value()?[0m
+    ?[31mThen ?[0m?[31man id is automatically generated for the added pet?[0m                              ?[90m# PetEndpointStepDefinitions.an_id_is_automatically_generated_for_the_added_pet()?[0m
+      ?[31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at endpoints.BaseEndpoints.verifyTrue(BaseEndpoints.java:37)
+      	at endpoints.PetEndpoint.verifyPetHasAnId(PetEndpoint.java:103)
+      	at stepdefs.PetEndpointStepDefinitions.an_id_is_automatically_generated_for_the_added_pet(PetEndpointStepDefinitions.java:75)
+      	at ✽.Then an id is automatically generated for the added pet(PetTests.feature:33)
+      ?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

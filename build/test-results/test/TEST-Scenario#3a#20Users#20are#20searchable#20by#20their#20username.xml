@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Users are searchable by their username" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-29T16:17:19" hostname="WKMGB2598340" time="0.345">
+  <properties/>
+  <testcase name="Given a valid user exists" classname="Scenario: Users are searchable by their username" time="0.0"/>
+  <testcase name="When I search for the user by their username" classname="Scenario: Users are searchable by their username" time="0.0"/>
+  <testcase name="Then the user is located" classname="Scenario: Users are searchable by their username" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Users are searchable by their username" time="0.748"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
