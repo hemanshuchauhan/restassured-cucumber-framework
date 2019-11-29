@@ -34,7 +34,7 @@ You will need:
 ```
 **Important: This suite should work on both windows and mac platforms however has only been tested on a Mac. If possible please use a Mac to execute the test suite**
 
-In order to execute the automation suite navigate to the Project directory within a Terminal/CMD window and run the command: **'mvn clean test'**.\n
+In order to execute the automation suite navigate to the Project directory within a Terminal/CMD window and run the command: **'mvn clean test'**. OR
 **'gradle clean test'**
 
 12 scenarios will be executed. Report file can be found *'target/reports/test-report/index.html'*
