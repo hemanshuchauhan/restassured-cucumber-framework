@@ -28,13 +28,14 @@ The project has 12 scenarios that that can be located within the feature files:
 *Important Note:* scenarios need to have the tag **@smokeTest** in order to be included in test executions
 ```
 You will need:
-- Java 1.8 installed (Does not work with Java below 1.8)
-- Maven Installed (I use version 3.5.2)
+- Java 1.8+ installed (Does not work with Java below 1.8) [I ran it on JDK 11 as well]
+- Maven Installed (I use version 3.5.2) OR Gradle 3.6.1
 - Eclipse (Or another Java IDE)
 ```
 **Important: This suite should work on both windows and mac platforms however has only been tested on a Mac. If possible please use a Mac to execute the test suite**
 
 In order to execute the automation suite navigate to the Project directory within a Terminal/CMD window and run the command: **'mvn clean test'**.
+**gradle clean test**
 
 12 scenarios will be executed. Report file can be found *'target/reports/test-report/index.html'*
 1 of the 12 test scenarios (Users are NOT able to place orders for available pets) within the OrderTests feature file will fail. The test is coded correctly, this is a legitimate failure when using the assumption that users should not be able to place orders for pets that are not available.
