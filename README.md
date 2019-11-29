@@ -34,8 +34,8 @@ You will need:
 ```
 **Important: This suite should work on both windows and mac platforms however has only been tested on a Mac. If possible please use a Mac to execute the test suite**
 
-In order to execute the automation suite navigate to the Project directory within a Terminal/CMD window and run the command: **'mvn clean test'**.
-**gradle clean test**
+In order to execute the automation suite navigate to the Project directory within a Terminal/CMD window and run the command: **'mvn clean test'**.\n
+**'gradle clean test'**
 
 12 scenarios will be executed. Report file can be found *'target/reports/test-report/index.html'*
 1 of the 12 test scenarios (Users are NOT able to place orders for available pets) within the OrderTests feature file will fail. The test is coded correctly, this is a legitimate failure when using the assumption that users should not be able to place orders for pets that are not available.
