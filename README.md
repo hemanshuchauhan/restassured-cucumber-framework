@@ -37,6 +37,6 @@ You will need:
 In order to execute the automation suite navigate to the Project directory within a Terminal/CMD window and run the command: **'mvn clean test'**. OR
 **'gradle clean test'**
 
-12 scenarios will be executed. Report file can be found *'target/reports/test-report/index.html'*
+12 Scenarios will be executed. Report file can be found *'target/reports/test-report/index.html'*
 1 of the 12 test scenarios (Users are NOT able to place orders for available pets) within the OrderTests feature file will fail. The test is coded correctly, this is a legitimate failure when using the assumption that users should not be able to place orders for pets that are not available.
 
